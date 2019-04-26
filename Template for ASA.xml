@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>4.0</version>
+    <date>2019-04-25T06:38:12Z</date>
+    <groups>
+        <group>
+            <name>Templates/Network Devices</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template Net Cisco IOS SNMPv2 for firewalls ASA</template>
+            <name>Template for ASA</name>
+            <description/>
+            <groups>
+                <group>
+                    <name>Templates/Network Devices</name>
+                </group>
+            </groups>
+            <applications/>
+            <items/>
+            <discovery_rules/>
+            <httptests/>
+            <macros>
+                <macro>
+                    <macro>{$CPU_UTIL_MAX}</macro>
+                    <value>90</value>
+                </macro>
+                <macro>
+                    <macro>{$MEMORY_UTIL_MAX}</macro>
+                    <value>90</value>
+                </macro>
+                <macro>
+                    <macro>{$STORAGE_UTIL_CRIT}</macro>
+                    <value>90</value>
+                </macro>
+                <macro>
+                    <macro>{$STORAGE_UTIL_WARN}</macro>
+                    <value>80</value>
+                </macro>
+                <macro>
+                    <macro>{$TEMP_CRIT}</macro>
+                    <value>60</value>
+                </macro>
+                <macro>
+                    <macro>{$TEMP_CRIT_LOW}</macro>
+                    <value>5</value>
+                </macro>
+                <macro>
+                    <macro>{$TEMP_WARN}</macro>
+                    <value>50</value>
+                </macro>
+            </macros>
+            <templates>
+                <template>
+                    <name>Template Module Cisco CISCO-MEMORY-POOL-MIB SNMPv2 for firewalls ASA</name>
+                </template>
+                <template>
+                    <name>Template Module Cisco CISCO-PROCESS-MIB SNMPv2 for firewalls ASA</name>
+                </template>
+                <template>
+                    <name>Template Module Cisco Inventory ASA SNMPv2</name>
+                </template>
+                <template>
+                    <name>Template Module Cisco Inventory SNMPv2</name>
+                </template>
+                <template>
+                    <name>Template Module EtherLike-MIB SNMPv2</name>
+                </template>
+                <template>
+                    <name>Template Module Generic ASA SNMPv2</name>
+                </template>
+                <template>
+                    <name>Template Module Generic SNMPv2</name>
+                </template>
+                <template>
+                    <name>Template Module Interfaces SNMPv2</name>
+                </template>
+            </templates>
+            <screens/>
+        </template>
+    </templates>
+</zabbix_export>
